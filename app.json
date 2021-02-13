@@ -1,0 +1,6 @@
+{
+  "name": "Dessa Observatory",
+  "description": "The central websocket broadcaster for dessa.",
+  "repository": "https://github.com/maael/dessa-observatory",
+  "keywords": ["node", "websocket", "dessa", "gw2"]
+}

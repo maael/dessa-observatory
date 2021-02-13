@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script>
+      let HOST = location.origin.replace(/^http/, 'ws')
+      let ws = new WebSocket(HOST);
+      let el;
+
+      ws.onmessage = (event) => {
+        el = document.getElementById('server-data');
+        el.innerHTML = JSON.stringify(event.data, undefined, 2);
+      };
+    </script>
+  </head>
+  <body>
+    <pre>
+      <code id="server-data"></code>
+    </pre>
+  </body>
+</html>
